@@ -1,0 +1,26 @@
+.father {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.child {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+}
+
+/* align-self: 각각의 child 마다 다르게 설정 가능  */
+
+/* .child:nth-child(2) {
+  align-self: center;
+}
+
+.child:nth-child(3) {
+  align-self: flex-end;
+} */
+
+/* order: default 값은 0. 처음 설정된 위치를 기준으로 움직임 */
+.child:nth-child(2) {
+  order: -1;
+}
