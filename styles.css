@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-around;
   height: 100vh;
+  /* flex-wrap: child의 width 크기 지켜! */
+  flex-wrap: wrap;
 }
 
 .child {
@@ -21,6 +23,6 @@
 } */
 
 /* order: default 값은 0. 처음 설정된 위치를 기준으로 움직임 */
-.child:nth-child(2) {
+/* .child:nth-child(2) {
   order: -1;
-}
+} */
