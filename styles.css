@@ -2,14 +2,27 @@
   display: flex;
   justify-content: space-around;
   height: 100vh;
-  /* flex-wrap: child의 width 크기 지켜! */
-  flex-wrap: wrap;
 }
 
 .child {
   width: 200px;
   height: 200px;
   background-color: pink;
+  color: white;
+  font-size: 50px;
+}
+
+.child:nth-child(2) {
+  background-color: #000;
+  /* flex-shrink: 다른 div들보다 2배 더 줄어들게됨 */
+  /* flex-shrink: 2; */
+
+  /* flex-grow: default 0, 공간이 남는 경우, 그 공간을 다 차지하면서 커짐 */
+  flex-grow: 1;
+}
+
+.child:nth-child(3) {
+  flex-grow: 2;
 }
 
 /* align-self: 각각의 child 마다 다르게 설정 가능  */
